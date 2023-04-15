@@ -27,5 +27,10 @@ public class Menu : MonoBehaviour
         Application.Quit();
     }
 
-   
+    public void NextScene2()
+    {
+        SceneManager.LoadScene(2);
+    }
+
+
 }
