@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class AvatarController : MonoBehaviour
 {
-
     [Header("Movement")]
+    public bool canMove;
     private float horizontal;
     public float speed = 8f;
     private bool isFacingRight = true;
@@ -13,19 +13,27 @@ public class AvatarController : MonoBehaviour
 
     void Start()
     {
-        
+        canMove = true;
     }
 
 
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
-        Flip(); 
+
+        if (canMove == true)
+        {
+            Flip();
+        }
+        
     }
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        if(canMove == true)
+        {
+            rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        }
 
     }
 
