@@ -32,5 +32,10 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene(2);
     }
 
+    public void NextScene3()
+    {
+        SceneManager.LoadScene(4);
+    }
+
 
 }
