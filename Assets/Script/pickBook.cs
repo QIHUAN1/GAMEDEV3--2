@@ -8,11 +8,15 @@ public class pickBook : MonoBehaviour
     public GameObject sign;
     public bool isInteracted;
 
+    public GameObject pickSign;
+
     // Start is called before the first frame update
     void Start()
     {
         sign.SetActive(false);
         isInteracted = false;
+
+        pickSign.SetActive(false);
     }
     // Update is called once per frame
     void Update()
@@ -30,6 +34,7 @@ public class pickBook : MonoBehaviour
         if (isInteracted == true && Input.GetKeyDown(KeyCode.F))
         {
             gameObject.SetActive(false);
+            pickSign.SetActive(true);
         }
     }
 
