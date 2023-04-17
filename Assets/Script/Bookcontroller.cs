@@ -7,6 +7,8 @@ public class Bookcontroller : MonoBehaviour
     AvatarController avatarController;
 
     public GameObject bookSign;
+
+    public GameObject theBook;
     
     public bool canUseit;
     public GameObject bookUI;
@@ -18,6 +20,8 @@ public class Bookcontroller : MonoBehaviour
        avatarController = GameObject.Find("Avatar").GetComponent<AvatarController>();
 
         canUseit = false;
+
+        theBook.SetActive(false);
     }
 
     // Update is called once per frame
@@ -30,6 +34,17 @@ public class Bookcontroller : MonoBehaviour
             bookUI.SetActive(false);
             canUseit = false;
             avatarController.canMove = false;
+
+            theBook.SetActive(true);
+        }
+
+        else if (canUseit == false && Input.GetKeyDown(KeyCode.E))
+        {
+            bookUI.SetActive(true);
+            canUseit = true;
+            avatarController.canMove = true;
+
+            theBook.SetActive(false);
         }
 
 
