@@ -6,6 +6,8 @@ public class DialogueCanvas : MonoBehaviour
 {
     public Animator animator;
 
+    public GameObject sightTool;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,5 +23,10 @@ public class DialogueCanvas : MonoBehaviour
     public void NoAnswer1()
     {
         animator.SetTrigger("ans1-3");
+    }
+
+    public void UnlocktheTool()
+    {
+        sightTool.SetActive(true);
     }
 }
