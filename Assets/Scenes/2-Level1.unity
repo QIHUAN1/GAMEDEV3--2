@@ -1642,6 +1642,7 @@ MonoBehaviour:
   canMove: 0
   speed: 2
   rb: {fileID: 1182675877}
+  animator: {fileID: 1182675881}
 --- !u!70 &1182675876
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

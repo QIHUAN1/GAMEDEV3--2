@@ -11,6 +11,9 @@ public class AvatarController : MonoBehaviour
     private bool isFacingRight = true;
     [SerializeField] private Rigidbody2D rb;
 
+    public Animator animator;
+    private float walkSpeed;
+
     void Start()
     {
         canMove = true;
@@ -18,14 +21,25 @@ public class AvatarController : MonoBehaviour
 
 
     void Update()
-    {
+    { 
         horizontal = Input.GetAxisRaw("Horizontal");
+        animator.SetFloat("Speed", walkSpeed);
 
         if (canMove == true)
         {
             Flip();
         }
-        
+
+        if (horizontal >= 0)
+        {
+            walkSpeed = horizontal * speed;
+        }
+
+        if (horizontal < 0)
+        {
+            walkSpeed = horizontal * speed * -1;
+        }
+
     }
 
     private void FixedUpdate()
