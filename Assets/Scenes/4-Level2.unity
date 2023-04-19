@@ -1685,7 +1685,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 569791216}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 71.15, y: 3.09, z: -10}
+  m_LocalPosition: {x: -7.9, y: -0.58000004, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2207,7 +2207,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 793695436}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 71.15, y: 2.07, z: 0}
+  m_LocalPosition: {x: -7.9, y: -1.6, z: 0}
   m_LocalScale: {x: 0.41757873, y: 0.41757873, z: 0.41757873}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2941,7 +2941,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1086274940}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 71.15, y: 3.09, z: -10}
+  m_LocalPosition: {x: -7.9, y: -0.58000004, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6831,7 +6831,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Press G to use the ghost sight
 
-    
+
 
 '
   m_isRightToLeft: 0
