@@ -219,9 +219,8 @@ GameObject:
   - component: {fileID: 213549101}
   - component: {fileID: 213549100}
   - component: {fileID: 213549099}
-  - component: {fileID: 213549098}
   - component: {fileID: 213549097}
-  - component: {fileID: 213549096}
+  - component: {fileID: 213549103}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -229,27 +228,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!320 &213549096
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 213549095}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 97e91630df2933048969855697aa5d73, type: 2}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: 883124911766853425, guid: 97e91630df2933048969855697aa5d73, type: 2}
-    value: {fileID: 1195725369}
-  - key: {fileID: 3560129120714495821, guid: 97e91630df2933048969855697aa5d73, type: 2}
-    value: {fileID: 213549098}
-  m_ExposedReferences:
-    m_References: []
 --- !u!114 &213549097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -262,36 +240,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 300ebccd55a287e4fbf28b13630cbf01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &213549098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 213549095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Events:
-    m_Signals:
-    - {fileID: 11400000, guid: 1c2ab4a44cf32dd46bdf1ca4fc2df4c2, type: 2}
-    m_Events:
-    - m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 213549097}
-          m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-          m_MethodName: NextScene3
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!114 &213549099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -374,6 +322,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!95 &213549103
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213549095}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7e74a0bb45cbe2a4c8e4a2c6c863cd63, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1195725369
 GameObject:
   m_ObjectHideFlags: 0
